@@ -25,44 +25,16 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>PURE Mobile Fulfillment</title>
         
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        <script type="text/javascript" charset="utf-8">
-            document.addEventListener("deviceready", onDeviceReady, false);
-            
-            function onDeviceReady() {
-                navigator.geolocation.getCurrentPosition(onSuccess, onError, {enableHighAccuracy:true});
-            }
-            
-            function onSuccess(position) {
-                var currLat = position.coords.latitude;
-                var currLong = position.coords.longitude;
-                
-//                var element = document.getElementById('geolocation');
-//                element.innerHTML = 'Lat: ' + currLat  + '<br />'
-//                                  + 'Long" ' + currLong;
-                                  
-                //Build URL for redirect to include current latitude/longitude
-                var urlString = 'http://192.168.1.148/svctrak/index.a5w?latitude=' 
-                                + currLat +'&longitude=' + currLong;
-                //go there
-                window.location.href = urlString;
-            }
-            
-            function onError(error) {
-                alert('code: '  + error.code    + '\n'  +
-                      'message: ' + error.message + '\n');
-            }
-            
-        </script>
+        
         
     </head>
-    <body><!--
+    <body>
         <div class="app">
-            <h1 style="text-align: center;">WELCOME DRIVERS!</h1>
-            <p id="geolocation">Finding geolocation...</p>
+            <h1 style="text-align: center;">WELCOME PACKERS!</h1>
+            
             <div id="buttons">                                                                
-                <button style="text-align: center;" class="bluBtn" onclick = "window.location.href = 'http://192.168.1.148/pure_mobile/index.a5w'">Enter Mobile Fulfillment</button></h1>
+                <button style="text-align: center;" class="bluBtn" onclick = "window.location.href = 'http://192.168.1.148/pure_mobile/'">Enter Mobile Fulfillment</button></h1>
             </div>
-        </div> -->
+        </div>
     </body>
 </html>

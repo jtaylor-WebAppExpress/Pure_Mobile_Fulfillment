@@ -23,19 +23,46 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>PURE Mobile Fulfillment</title>
-        
-        
-        
+        <title>PURE Mobile Fulfillment</title>		
+		<style type="text/css">
+			body{
+				text-align: center;
+				font-family: Times New Roman Baltic;
+				color: #000080;
+				font-weight: bold;
+			}
+			h1, hr{
+				font-size: 36pt; 
+			}			
+			.button_wrapper{
+				position: absolute;
+				top: 40%;
+				left: 15%;
+				right: 15%;	
+			}			
+			.buttons{
+				width: 70%;
+				padding: 10px;
+				font-size: 16pt;
+				font-weight: bold;
+			}
+			.footer{
+				position: absolute;
+				bottom: 15px;
+				left: 5px;
+				right: 5px;
+				
+				font-size: 10pt;
+			}
+		</style>    
     </head>
-    <body>
-        <div class="app">
-            <h1 style="text-align: center;">WELCOME PACKERS!</h1>
-            
-            <div id="buttons">                                                                
-                <button style="text-align: center;" class="bluBtn" onclick = "window.location.href = 'http://192.168.1.169/pure_mobile/'">Fulfill Orders</button></h1>
-                <button style="text-align: center;" class="bluBtn" onclick = "window.location.href = 'http://192.168.1.169/pure_mobile/autologin.a5w?UI=admin'">Auto Login</button></h1>
-            </div>
-        </div>
+    <body><h1>LILLIPUT</h1><hr />
+		<div class="button_wrapper">
+			<button class="buttons" onclick = "window.location.href = 'http://192.168.1.169/pure_mobile/'">Fulfill Orders</button><br /><br />
+			<button class="buttons" onclick = "window.location.href = 'http://192.168.1.169/pure_mobile/'">Auto Login</button><br /><br />	
+		</div>
+		<div class="footer"><hr />
+			&#x00a9; Copyright Web App Express, LTD. 2012-2013 - All Rights Reserved
+		</div>
     </body>
 </html>
